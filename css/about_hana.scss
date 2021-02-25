@@ -1,0 +1,762 @@
+/*
+
+// 
+
+1.top_message
+2.hana_history
+3.nmb_hana
+4.brand_hana
+5.hana_company
+
+//
+  */
+
+  .section_kv{
+    position: relative;
+    .section_kv_img{
+     
+      img{
+        width: 100%;
+      }
+    }
+    .kv_message{
+        position: absolute;
+        top: 27%;
+        width: 100%;
+    }
+}
+  /*  top_message ****************************************************************/
+
+  #top_message{
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 1%,#ffe9e8 14%,#ffd9d7 25%,#ffd4d2 29%,#ffd4d2 32%,#e5dbeb 54%,#e5dbeb 71%,#bdf2ff 88%,#bdf2ff 100%);
+    padding-top: 90px;
+  }
+
+  .msg_section2{
+      padding-bottom:70px;
+      .sec_cover{
+        width:100%;
+          display:flex;
+          flex-direction:column;
+          max-width:1280px;
+          margin:0 auto;
+          position:relative;
+          background: linear-gradient(to bottom, #ff7bac 0%,#e363ac 100%);
+        @media screen and (min-width:756px){
+            flex-direction:row;
+        }
+        .intro_box_image{
+           width:100%;
+            margin-bottom: -8px;
+            @media screen and (min-width:756px){
+                width:55%;
+                position:absolute;
+                height:100%;
+                overflow: hidden;
+                img{
+                    object-fit:cover;
+                    height:100%;
+                    width:100%;
+                }
+            }
+          }
+          .intro_box{
+            width:100%;
+              @media screen and (min-width:756px){
+                width:45%;
+                  margin-left:auto;
+              }
+              .inner_w{
+                width:100%;
+                  background:#fff;
+                  box-sizing:border-box;
+                  padding-left:15px;
+                  padding-bottom:30px;
+                  @media screen and (min-width:756px){
+                    padding-left:30px;  
+                  }
+                  .message_image{
+                      padding-top:30px;
+                      max-width:250px;
+                      @media screen and (min-width:756px){
+                        padding-top:0;  
+                      }
+                  }
+
+                  .intro_title_desc{
+                    margin:20px 0 40px; 
+                      font-size:22px;
+                      font-weight:bold;
+                      color:#2e3d83;
+                  }
+                  .intro_box_h3{
+                      color:#2e3d83;
+                      font-size:32px;
+                      margin-bottom:0;
+                      letter-spacing:0.6px;
+                  }
+              }
+              .title_box{
+                padding:15px;
+                  color:#fff;
+                  @media screen and (min-width:756px){
+                    padding:30px;  
+                  }
+
+              }
+              &_txt{
+               &_p{
+                   line-height:2;
+                   font-weight:bold;
+                   padding-bottom:30px;
+                   letter-spacing:1.6px;
+                  }
+              }
+          }
+      }
+  }
+  .msg_section3,.msg_section4{
+    .last_message_box{
+      width: 100%;
+      margin: 0 auto ;
+      padding: 3% 0 40px;
+      .last_message_box_desc{
+      
+      .last_message{
+        z-index: 120;
+        font-size : 21px;
+        line-height : 40px;
+        letter-spacing : 1.6px;
+        color : rgb(46, 61, 131);
+        margin: 0 auto 0;
+        width: 100%;
+          }
+        .typing{
+          font-size : 25px;
+          letter-spacing : 1.6px;
+          color : #ff688b;
+          font-weight: 700;
+          margin: 0 0 4%;
+        }
+          .typetext{
+            font-size:16px;
+              line-height:30px;
+          }
+      }
+      }
+          .right-text{
+              display:flex;
+              flex-direction:column;
+              justify-content:space-between;
+              padding-bottom:40px;
+              @media screen and (min-width:756px){
+                flex-direction:row; 
+                  padding:0 15px 50px;
+              }
+              @media screen and (min-width:1280px){
+                  padding:0;
+                  padding-bottom:50px;
+                padding-left:calc((100vw - 1280px) / 2);  
+              }
+              &-pad{
+                  box-sizing:border-box;
+                  padding:0;
+                  padding-top:10px;
+                  width:100%;
+                  font-weight:bold;
+                  @media screen and (min-width:756px){
+                  padding:0;
+                  margin-left:15px;
+                  padding-top:50px;
+                  border-top:1px solid #ff688b;
+                  }
+                  @media screen and (min-width:1280px){
+                    padding-right:calc((100vw - 1280px) / 2);
+                  }
+              }
+          }
+          .left-text{
+              display:flex;
+              flex-direction:column;
+              justify-content:space-between;
+              padding-bottom:40px;
+              @media screen and (min-width:756px){
+                flex-direction:row-reverse;
+                  padding:0 15px 50px;
+              }
+              @media screen and (min-width:1280px){
+                  padding:0;
+                  padding-bottom:50px;
+                padding-right:calc((100vw - 1280px) / 2);  
+              }
+              &-pad{
+                  box-sizing:border-box;
+                  padding:0 15px;
+                  padding-top:10px;
+                  width:100%;
+                  font-weight:bold;
+                  @media screen and (min-width:756px){
+                  padding:0;
+                  margin-left:15px;
+                  padding-top:50px;
+                  border-top:1px solid #ff688b;
+                      padding-right:15px;
+                  }
+                  @media screen and (min-width:1280px){
+                    padding-left:calc((100vw - 1280px) / 2);  
+                  }
+              }
+          }
+          .message-img{
+            padding:50px 0 0;
+              box-sizing:border-box;
+              @media screen and(min-width:480px){
+              min-width:450px;
+              }
+              @media screen and(min-width:756px){
+              min-width:30%;
+                  
+              }
+    }
+    .last_message_image{
+      z-index: 120;
+      margin-left: 70%;
+      img{
+        max-width: 200%!important;
+      }
+    }
+    @media(max-width:756px){
+      .last_message{
+  
+      }
+      .typing{
+        font-size: 23px!important;
+        margin: 6% 0!important;
+      }
+      padding: 2% 0 0!important;
+      .last_message_image{
+        margin-left: 45%!important;
+      }
+    }
+    @media(max-width:550px){
+      .typing{
+        font-size: 22px!important;
+      }
+      .last_message{
+        font-size: 18px!important;
+        line-height: 36px!important;
+        width: 95%!important;
+      }
+      .last_message_image{
+        margin-left: 30% !important;
+      }
+    }
+  }
+.msg_section4{
+    .sec_cover{
+          .left-text{
+              display:flex;
+              flex-direction:column;
+              justify-content:space-between;
+              padding-bottom:40px;
+              color:#2e3d83;
+              @media screen and (min-width:756px){
+                flex-direction:row-reverse;
+                  padding:0 15px 50px;
+              }
+              @media screen and (min-width:1280px){
+                  padding:0;
+                  padding-bottom:50px;
+                padding-right:calc((100vw - 1280px) / 2);  
+              }
+            .ms4title{
+                font-size : 25px;
+                letter-spacing : 1.6px;
+                color : #2e3d83;
+                font-weight: 700;
+                margin: 0 0 4%;
+            }
+          .typetext{
+            font-size:16px;
+              letter-spacing:1.6px;
+              line-height:30px;
+          }
+          .message-img{
+            padding:50px 15px 0;
+              box-sizing:border-box;
+              @media screen and(min-width:480px){
+              min-width:450px;
+              }
+              @media screen and(min-width:756px){
+              min-width:30%;
+                  
+              }
+    }
+
+              &-pad{
+                  box-sizing:border-box;
+                  padding:0 15px;
+                  padding-top:10px;
+                  width:100%;
+                  font-weight:bold;
+                  @media screen and (min-width:756px){
+                  padding:0;
+                  margin-left:15px;
+                      padding-right:15px;
+                  padding-top:50px;
+                  border-top:1px solid #ff688b;
+                  }
+                  @media screen and (min-width:1280px){
+                    padding-left:calc((100vw - 1280px) / 2);  
+                  }
+              }
+          }
+    }
+}
+.end{
+    text-align:center;
+    padding-bottom:50px;
+}
+    /*  top_message end ****************************************************************/
+ 
+    /*  hana_history ****************************************************************/
+  
+  
+    .hst_section2{
+      .news_box{
+        z-index: 120;
+        .news_lists{
+          padding: 10px 4.5%;
+          max-width: 70%;
+          margin:  0 auto 5%;
+          background-color: #fff;
+          font-size : 16px;
+          line-height : 36px;
+          letter-spacing : 1.6px;
+          color : rgb(46, 61, 131);
+          z-index: 150;
+            font-family:"Noto Sans", sans-serif;
+          .news_list{
+            margin:20px 0;
+            padding: 20px 0 20px 20px;
+            border-bottom:1px dotted #6F7579;
+            &:first-child{
+              border-top: 1px dotted #6F7579;
+            }
+            .news_date{
+              width: 30%;
+              margin-right: 10px;
+            }
+  
+          }
+          @media(max-width:756px){
+         
+           font-size: 13px!important;
+           line-height: 31px!important;
+           padding:10px 10px!important;
+           max-width: 95%!important;
+              .news_list{
+                margin: 10px 0v!important;
+                padding: 15px 0 15px 0!important;  
+            }
+            
+          }
+          @media(max-width:550px){
+            .news_list{
+              display: block!important;
+            }
+            .news_date{
+        
+              width: 100%!important;
+            }
+          }
+        }
+      }
+    }
+  
+      /*  hana_histry end****************************************************************/
+  
+        /*  nmb_hana ****************************************************************/
+        .under_graph{
+          font-family: 'Roboto', sans-serif!important;
+          font-weight: 700;
+          color : #2E3D83;      }
+        .nmb_section2{
+         *{
+          z-index: 120;
+         }
+        .nmb_hana{
+          margin: 8% 0;
+        }
+        .section_descs{
+          z-index: 120;
+          font-size : 14px;
+          letter-spacing : 2.8px;
+          color : #2E3D83;
+          margin: 0 20px 10% 20px;
+        }
+      }
+      .os{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        font-size: 42px;
+        color: #FF688B;
+        letter-spacing: .3em;
+        @media(max-width:550px){
+          font-size: 32px!important;
+          letter-spacing: .2em;
+        }
+      }
+  
+            /*  nmb_hana  end****************************************************************/
+  
+  
+            /*  brand_hana ****************************************************************/
+  
+  
+            .brand_section2{
+              .section_cover{
+  
+              }
+              .container_image{
+                max-width:100%;
+                width:100%;
+                background:url("../images/hana/brand_hana/brand_background.jpg")center center no-repeat;
+                background-size: cover;
+                min-height:571px;
+              }
+              .brand_image_box{
+                position: relative;
+                transform: translateY(100px);
+                .brand_image_title{
+                  font-family: 'Roboto', sans-serif!important;
+                  font-size : 40px;
+                  line-height : 36px;
+                  letter-spacing : 4px;
+                  color : #2E3D83;
+              transform: translateX(-50%);
+              -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                left: 50%;
+                  top: 30%;
+                  position: absolute;
+                  width: 100%;
+                  &:after{
+                    content:'';
+                    height:60px;
+                    width: 1px;
+                    background-color:#FF688B;
+                    position:absolute;
+                    left: 50%;
+                    top: 200%;
+                }
+                
+                }
+                .brand_image_txt{
+                  font-weight : bold;
+                  font-size: 25px;
+                  line-height: 55px;
+                  letter-spacing : 1.6px;
+                  color : #FFFFFF;
+                  text-shadow:0 0 5px #FF688B;
+                  transform: translateY(220px);
+                  -webkit-transform: translateY(220px);
+                  -ms-transform: translateY(220px);
+                }
+              }
+              .brand_hana{
+                margin: 8% 0 0;
+              }
+              .section_descs{
+                font-size : 14px;
+                letter-spacing : 2.8px;
+                color : #2E3D83;
+                margin-bottom: 5%;
+              }
+              
+              @media(max-width:765px){
+                .container_image{
+                  min-height: 400px!important;
+                }
+                .brand_image_title{
+                  
+                  top: 15%!important;
+                }
+                .brand_image_box{
+                  transform: translateY(40px)!important;
+                }
+                .brand_image_title::after{
+                  top: 150%!important;
+                }
+                .brand_image_txt{
+               
+                  max-width: 90%;
+                  margin: 0 auto;
+                  transform: translateY(145px)!important;
+                  -webkit-transform: translateY(145px)!important;
+                  -ms-transform: translateY(145px)!important;
+                
+                }
+              }
+              @media(max-width:550px){
+                .container_image{
+                  min-height: 430px!important;
+                }
+                .brand_image_title{
+                  top: 10%!important;
+                }
+                .brand_image_txt{
+                  font-size: 23px!important;
+                  line-height: 50px!important;
+                  transform: translateY(150px)!important;
+                  -webkit-transform: translateY(150px)!important;
+                  -ms-transform: translateY(150px)!important;
+    
+                }
+                .brand_image_box{
+                  transform: translateY(35px)!important;
+                }
+              }
+         
+            }
+            .brand_section3{
+              margin-bottom: 5%;
+              .container{
+              max-width: 65%!important;
+            }
+            .brands_image{
+         
+              margin-bottom: 3.5%;
+              animation-duration: 1s;
+             transition-duration: 1s;
+              &:after{
+                content:'';
+                height:1px;
+                width: 40%;
+                background-color:#FF688B;
+                position:absolute;
+                left: 75%;
+                top: 45%;
+              }
+            }
+          
+            .brands_contents{
+          
+              .brands_contents_title{
+                font-family: 'Roboto', sans-serif!important;
+                font-weight : bold;
+                color : #2E3D83;
+                font-size : 23px;
+                letter-spacing : 2.3px;
+                text-outline : #FF688B;
+                text-outline : rgb(255, 104, 139);
+                margin-bottom: 2%;
+              }
+              .brands_contents_desc{
+                font-family: 'Roboto', sans-serif!important;
+                font-weight : bold;
+                color : #2E3D83;
+                font-size : 16px;
+                line-height : 30px;
+                letter-spacing : 1.6px;
+                max-width: 90%;
+              }
+            }
+            .right_brands_contents{
+                    text-align: right;
+              .brands_contents_desc{
+                max-width: inherit;
+              }
+            }
+            .right_brands_image{
+              text-align: right;
+              &::after{
+              right: 75%;
+              left: unset!important;
+            }
+            }
+            @media(max-width:756px){
+              margin-bottom: 3%;
+              .container{
+                padding: 0!important;    
+                      }
+              .brands_contents{
+                text-align: left!important;
+  
+                .brands_contents_title{
+                  color : #2E3D83;
+                  font-size : 18px!important;
+                  letter-spacing : 1.8px!important;
+  
+                }
+                .brands_contents_desc{
+                  font-size: 14px!important;
+                  line-height: 26px!important;
+                  max-width: 100%!important;
+                }
+              }
+              .brands_image{
+                margin-bottom: 3.5%;
+                &:after{
+               display: none!important;
+                }
+              }
+            }
+            }
+  
+            /*  brand_hana  end****************************************************************/
+  
+  
+  
+            /*  company_hana ****************************************************************/
+  
+            .cmp_section2{
+              .company_box{
+                .company_lists{
+                  padding: 2% 0;
+                  max-width: 70%;
+                  margin:  0 auto 5% auto;
+                  background-color: #fff;
+                  font-size : 16px;
+                  line-height : 36px;
+                  letter-spacing : 1.6px;
+                  z-index: 120;
+                font-family:"Noto Sans", sans-serif;
+                  .company_list{
+                    padding: 0 ;
+                    align-items: center;
+                    margin: 0 ;
+                    border-bottom:1px dashed #6F7579;
+                    &:first-child{
+                      border-top: 1px dotted #6F7579;
+                    }
+                    .company_date{
+                     width: 13%;
+                     padding: 8% 3%;
+                     background-color: #f2f2f2;     
+                     color : rgb(46, 61, 131);
+  
+                    }
+                    .company_contents{
+                      padding: 7% 0 7% 2%;
+                      font-size : 16px;
+                      line-height : 25px;
+                      width: 100%;
+                      color : rgb(46, 61, 131);
+  
+                      .main_company{
+                      margin-bottom: 1%;
+  
+                      }
+                    }
+                    .address_date{
+                      padding: 11% 3%!important;
+                    }
+  
+                    .address_contents{
+                      padding: 0 0 0 2%!important;
+  
+                    }
+          
+                  }
+                  @media(max-width:756px){
+                 
+           
+                   padding: 0!important;
+                   max-width: 90%!important;
+                      .company_list{
+                        margin: 0px 0!important;
+                        padding:  0!important;  
+                    .company_date{
+                      font-size: 13px!important;
+                      line-height: 31px!important;
+                    } 
+                    .company_contents{
+                      font-size: 15px!important;
+                      line-height: 31px!important;
+                    } 
+                    }
+                    
+                  }
+                  @media(max-width:550px){
+                      max-width: 100%!important;
+                    .company_list{
+                      display: block!important;
+                      .company_date{
+                       width: 100%!important;
+                      } 
+                      .company_contents{
+                        padding: 7% 2% 7% 2%!important;
+                      } 
+                    }
+                    }
+                  }
+                }
+              
+            }
+ /*  company_hana end****************************************************************/
+  
+
+            /*  nmb_hana ****************************************************************/
+
+    .graphs-type2{
+        margin-top:50px;
+        display:flex;
+        flex-direction:column;
+        @media screen and (min-width:768px){
+            flex-direction:row;
+        }
+        .circle_graph-type2{
+            width:100%;
+            @media screen and (min-width:768px){
+                width:calc(100% / 3);
+                padding:10px;
+            }
+            .circle_graph_title{
+                min-width:200px;
+                text-align:center;
+                background:#fff;
+                font-size : 24px;
+                line-height : 72px;
+                letter-spacing : 4.8px;
+                color : #FF688B;
+                display:inline-block;
+            }
+            .circle_graph_image{
+                position:relative;
+                .man{
+                    font-size:24px;
+                    color:#fff;
+                    font-weight:bold;
+                    position:absolute;
+                    top:50%;
+                    left:25%;
+                    transform:translate(-50%,-50%);
+                }
+                .women{
+                    font-size:24px;
+                    color:#fff;
+                    font-weight:bold;
+                    position:absolute;
+                    top:50%;
+                    left:75%;
+                    transform:translate(-50%,-50%);
+                }
+            }
+            .circle_graph_image-type2{
+                margin-top:40px;
+                canvas{
+                    display: block;
+                    width: 100%!important;
+                    height: auto!important;
+                }
+                img{
+                    padding:16% 0;
+                }
+            }
+        }
+    }
+
+ /*  nmb_hana end****************************************************************/
+
+  

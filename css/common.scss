@@ -1,0 +1,70 @@
+/* CSS Document */
+  .msg_section1,.hst_section1,.nmb_section1,.brand_section1,.cmp_section1{
+    .title_box{
+      max-width: 75%;
+      position: relative;
+      .inner{
+        transform: translateY(-60%);
+      }
+      .title_box_img{
+        color : rgb(255, 255, 255);
+        padding: 50px 0px;
+        height: 100%;
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF93AC', endColorstr='#E363AC' ,GradientType=0)";
+        background : linear-gradient(-90deg, rgba(255, 147, 172, 1) 0%, rgba(255, 123, 172, 1) 36.89%, rgba(227, 99, 172, 1) 100%);
+        opacity : 0.8;
+        filter: alpha(opacity=80) progid:DXImageTransform.Microsoft.Alpha(opacity=80) progid:DXImageTransform.Microsoft.gradient(startColorstr='#E363AC',endColorstr='#FF93AC' , GradientType=1);
+        &.funeral{
+             background : linear-gradient(-90deg, rgba(191, 171, 236, 1) 0%, rgba(161, 173, 236, 1) 36.89%, rgba(125, 95, 166, 1) 100%); 
+          }
+          &.employee{
+          background: linear-gradient(to right, rgba(60, 169, 241, 1) 0%, rgba(107, 209, 241, 1) 37%, rgba(79, 194, 241, 1) 100%);
+          }
+          &.manager{
+             background : linear-gradient(-90deg, rgba(34, 181, 115, 1) 0%, rgba(77, 182, 156, 1) 41.98%, rgba(0, 169, 157, 1) 100%);   
+          }
+        h1{
+            margin:0;
+            font-size : 37px;
+            font-weight:bold;
+            font-family:"Noto Sans", sans-serif;
+        }
+        span{
+          display: inline-block;
+          transform: translateX(50px);
+        }
+      }
+    }
+    @media(max-width:765px){
+      .title_box{
+        max-width: 80%!important;
+      }
+      .title_box_img{
+        padding: 10px 0!important;
+        font-size: 30px!important;
+        span{
+          transform: translateX(10px)!important;
+        }
+        img{
+          padding:  18px!important;
+        }
+      }
+    }
+    @media(max-width: 550px){
+      .title_box_img{
+        font-size: 18px!important;
+        span{
+          letter-spacing: 2.6px!important;
+          font-size: 12px!important;
+          display: inline!important;
+          line-height: 0!important;
+        }
+      }
+    }
+  }
+img{
+    max-width:100%;
+}
+.circleimg{
+    border-radius:50%;
+}

@@ -1,0 +1,57 @@
+ 
+    <!DOCTYPE html>
+      <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+      <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+      <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+      <head>
+<meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lazy Line Painter</title>
+        <meta name="description" content="A modern JS library for SVG path animation">
+
+        <!-- css  -->
+        <style>
+
+       
+
+            #graph {
+              width: 70vw;
+              height: 70vh;
+              position: relative;
+              overflow: visible;
+            }
+        </style>
+     
+        <!-- Include lazylinepainter -->
+        <script src="lazy-line-painter-1.9.6.min.js"></script>
+
+        <script type="text/javascript">
+
+          (function(){ 
+
+            document.onreadystatechange = () => {
+
+              if (document.readyState === 'complete') {
+                        
+                /**
+                 * Setup your Lazy Line element.
+                 * see README file for more settings
+                 */
+
+                let el = document.querySelector('#graph');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutQuint","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square"}); 
+                myAnimation.paint(); 
+              }
+            }
+
+          })();
+
+        </script>
+      </head>
+
+      <body>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.96 412.29" data-llp-composed="true" id="graph" class="lazy-line-painter"><defs><style>.cls-1,.cls-4,.cls-5{fill:none;stroke-miterlimit:10;}.cls-1,.cls-5{stroke:#2e3d83;}.cls-2,.cls-6,.cls-7,.cls-8{fill:#2e3d83;}.cls-3{fill:#ff688b;}.cls-4{stroke:#ff688b;}.cls-5{stroke-width:2px;}.cls-6{font-size:18px;letter-spacing:0.2em;}.cls-7{font-size:14px;letter-spacing:0.1em;}.cls-7,.cls-8{font-family:NotoSansCJKjp-Bold-83pv-RKSJ-H, Noto Sans CJK JP;}.cls-8{font-size:21px;letter-spacing:0.1em;}</style></defs><g id="レイヤー_2" data-name="レイヤー 2"><g id="デザイン"><path class="cls-1" d="M.22,295l85.5-41.5L362.22,200l276-49,277-104c.5.5,85.5-45.5,85.5-45.5" data-llp-id="graph-0" data-llp-duration="500" data-llp-delay="0" fill-opacity="1" style=""/><circle class="cls-2" cx="85.22" cy="252.98" r="10" data-llp-id="graph-1" data-llp-duration="500" data-llp-delay="500" fill-opacity="1" style=""/><circle class="cls-2" cx="361.88" cy="199.98" r="10" data-llp-id="graph-2" data-llp-duration="500" data-llp-delay="1000" fill-opacity="1" style=""/><circle class="cls-2" cx="638.55" cy="150.98" r="10" data-llp-id="graph-3" data-llp-duration="500" data-llp-delay="1500" fill-opacity="1" style=""/><circle class="cls-3" cx="915.22" cy="46.98" r="10" data-llp-id="graph-4" data-llp-duration="500" data-llp-delay="2000" fill-opacity="1" style=""/><circle class="cls-4" cx="915.22" cy="46.98" r="12" data-llp-id="graph-5" data-llp-duration="500" data-llp-delay="2500" fill-opacity="1" style=""/><line class="cls-5" x1="0.22" y1="370.48" x2="1000.22" y2="370.48" data-llp-id="graph-6" data-llp-duration="500" data-llp-delay="3000" fill-opacity="1" style=""/><text class="cls-6" transform="translate(50.8 406.48)">2017/1</text><text class="cls-6" transform="translate(326.6 406.48)">2018/1</text><text class="cls-6" transform="translate(603.16 406.48)">2019/1</text><text class="cls-6" transform="translate(878.78 406.48)">2020/1</text><text class="cls-7" transform="translate(54.01 222.48)">000,000</text><text class="cls-7" transform="translate(331.01 168.48)">000,000</text><text class="cls-7" transform="translate(606.01 123.48)">000,000</text><text class="cls-8" transform="translate(866.4 18.48)">000,000</text></g></g></svg>
+      </body>
+    </html>

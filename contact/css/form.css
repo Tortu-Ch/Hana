@@ -1,0 +1,37 @@
+/* CSS Document */
+.form-area {
+  width: 96%;
+  padding: 50px 2%;
+  background-color: #fff;
+  position: relative;
+  z-index: 3; }
+  .form-area .form_content {
+    border-top: 1px dashed #ccc; }
+    .form-area .form_content th, .form-area .form_content td {
+      border-bottom: none; }
+    .form-area .form_content th {
+      width: 20%;
+      background: #f2f2f2;
+      padding: 30px 30px;
+      margin-bottom: 0;
+      color: #2e3d83; }
+      .form-area .form_content th span {
+        color: #ed1c24; }
+    .form-area .form_content td {
+      width: 70%;
+      margin: auto;
+      margin: 1%;
+      background: #fff; }
+      .form-area .form_content td input, .form-area .form_content td textarea, .form-area .form_content td .privacy_text {
+        width: 100%;
+        background: #f2f2f2;
+        border-radius: inherit;
+        margin-bottom: 0; }
+      .form-area .form_content td textarea {
+        height: 250px; }
+      .form-area .form_content td input {
+        height: 50px; }
+  .form-area .privacy_radio th {
+    color: #2e3d83;
+    text-align: center;
+    width: 100%; }

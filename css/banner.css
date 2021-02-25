@@ -1,0 +1,45 @@
+/* CSS Document */
+.banner {
+  padding: 50px 0; }
+  .banner .descripts {
+    justify-content: space-between; }
+    .banner .descripts .descript {
+      width: 48%;
+      position: relative; }
+      .banner .descripts .descript a {
+        transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1); }
+        .banner .descripts .descript a img {
+          transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1); }
+        .banner .descripts .descript a:hover {
+          opacity: 0.5; }
+          .banner .descripts .descript a:hover img {
+            opacity: 0.5; }
+      .banner .descripts .descript .descriptions_title {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        left: 50%;
+        top: -25px;
+        position: absolute;
+        z-index: 301; }
+      .banner .descripts .descript .descriptions_image img {
+        width: 100%;
+        max-width: 100%; }
+      .banner .descripts .descript .descriptions_arrows {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        left: 50%;
+        bottom: -40px;
+        position: absolute; }
+  @media (max-width: 756px) {
+    .banner {
+      padding: 30px 0 5% 0; }
+      .banner .descript {
+        width: 100% !important;
+        margin: 5% 0 25% !important; }
+      .banner .descripts {
+        display: block !important; }
+        .banner .descripts .descriptions {
+          width: 95% !important;
+          margin: 0 auto 5%; } }

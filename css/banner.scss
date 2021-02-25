@@ -1,0 +1,64 @@
+/* CSS Document */
+
+ .banner{
+     padding: 50px 0;
+  .descripts{
+   
+    justify-content: space-between;
+    .descript{
+      width: 48%;
+      position: relative;
+      a{
+          transition:all .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+          img{
+              transition:all .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+        &:hover{
+            opacity:0.5;
+            img{
+                opacity:0.5;
+            }
+          }
+      }
+
+      .descriptions_title{
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        left: 50%;
+        top: -25px;
+        position: absolute;
+          z-index:301;
+      }
+      .descriptions_image img{
+        width: 100%;
+        max-width: 100%;
+      }
+      .descriptions_arrows{
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        left: 50%;
+        bottom: -40px;
+        position: absolute;
+      }
+
+    }
+    }
+    
+    @media(max-width:756px){
+      padding: 30px 0 5% 0;
+      .descript{
+        width: 100%!important;
+        margin: 5% 0 25%!important;
+      }
+
+      .descripts{
+        display: block!important;
+        .descriptions{
+          width: 95%!important;
+          margin: 0 auto 5%;
+        }
+      }
+    }
+  }
